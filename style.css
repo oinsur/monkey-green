@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,400;0,700;1,400;1,700&family=IM+Fell+English:ital@1&family=Montserrat&display=swap');
+
 :root {
     display: flex;
     justify-content: center;
@@ -18,11 +20,13 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .page{
     width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     overflow: hidden;
@@ -34,7 +38,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    animation: splash 2s linear forwards;
+    animation: splash-loading 2s linear forwards;
 }
 
 .splash img:nth-of-type(1) {
@@ -53,7 +57,7 @@ body {
     align-self: flex-start;
 }
 
-@keyframes splash {
+@keyframes splash-loading {
     from {
         opacity: 0;
     }
@@ -62,3 +66,42 @@ body {
     }
 }
 
+a.scroll {
+    visibility: hidden;
+    text-decoration: none;
+    color: #3a281c;
+    font-size: clamp(.5rem, 3vw, 2rem);
+    animation: scroll-loading 1s 3s linear infinite;
+  }
+
+  a.scroll::after {
+    content: "Click here or scroll down";
+  }
+
+  @keyframes scroll-loading {
+    from {
+      visibility: hidden;
+      opacity: 0;
+    }
+    to {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+  
+.order {
+    width: 25%;
+    margin: 2% 0;
+    color: #DBF2CC;
+    background-color: #75BF44;
+    font-size: 2rem;
+    text-decoration: none;
+    text-align: center;
+    padding: 1% 2%;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+.order:hover {
+    box-shadow: 0 0 20px #3a281c;
+}
