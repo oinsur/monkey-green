@@ -30,6 +30,7 @@ body {
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    animation: loading 2s linear forwards;
 }
 
 .splash {
@@ -38,7 +39,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    animation: splash-loading 2s linear forwards;
+    /* animation: loading 2s linear forwards; */
 }
 
 .splash img:nth-of-type(1) {
@@ -57,41 +58,11 @@ body {
     align-self: flex-start;
 }
 
-@keyframes splash-loading {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
 
-a.scroll {
-    visibility: hidden;
-    text-decoration: none;
-    color: #3a281c;
-    font-size: clamp(.5rem, 3vw, 2rem);
-    animation: scroll-loading 1s 3s linear infinite;
-  }
-
-  a.scroll::after {
-    content: "Click here or scroll down";
-  }
-
-  @keyframes scroll-loading {
-    from {
-      visibility: hidden;
-      opacity: 0;
-    }
-    to {
-      visibility: visible;
-      opacity: 1;
-    }
-  }
-  
 .order {
     width: 25%;
     margin: 2% 0;
+    opacity: 0;
     color: #DBF2CC;
     background-color: #75BF44;
     font-size: 2rem;
@@ -100,8 +71,79 @@ a.scroll {
     padding: 1% 2%;
     border-radius: 10px;
     transition: .5s;
+    animation: loading 2s linear forwards;
 }
 
 .order:hover {
-    box-shadow: 0 0 20px #3a281c;
+    box-shadow: 0 0 20px #36760C;
+    filter: hue-rotate(45deg);
+}
+
+@keyframes loading {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#main {
+    position: relative;
+    opacity: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: #36760C;
+    animation: loading 1s 2s linear forwards;
+}
+
+.intro {
+    position: relative;
+    width: 100%;
+    padding: 0 5%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.intro img {
+    width: 30%;
+}
+
+.intro img:nth-of-type(1) {
+    z-index: 1;
+    margin-right: 3%;
+    border-radius: 10%;
+    box-shadow: 10px 10px 5px #75BF44;
+}
+
+.intro img:nth-of-type(2) {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    opacity: .5;
+    transform: rotate(135deg)
+}
+
+.intro p {
+    width: 45%;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    z-index: 1;
+}
+
+.intro span {
+    font-family: 'IM Fell English', serif;
+}
+
+.burger {
+    position: absolute;
+    top: -10%;
+    right: -15%;
+    width: 50%;
+}
+
+.healthy {
+
 }
