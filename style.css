@@ -126,9 +126,12 @@ body {
     transform: rotate(135deg)
 }
 
+p {
+    font-size: 1.5rem;
+}
+
 .intro p {
     width: 45%;
-    font-size: 1.5rem;
     line-height: 3rem;
     z-index: 1;
 }
@@ -145,5 +148,15 @@ body {
 }
 
 .healthy {
+    margin: 10% 0;
+    background-color: #75BF44;
+    color: #DBF2CC;
+    width: 50%;
+    align-self: center;
+    padding: 2%;
+    border-radius: 10px;
+}
 
+.healthy p {
+    font-size: 1.2rem;
 }
