@@ -162,9 +162,11 @@ p {
 
 .healthy p {
     font-size: 1.2rem;
+    line-height: 2rem;
 }
 
 .atmosphere {
+    position: relative;
     width: 100%;
     margin: 2% 0;
     display: flex;
@@ -181,22 +183,63 @@ h2 {
 
 .welcoming, .commitment {
     width: 25%;
-    height: 90%;
     background-color: white;
     padding: 2%;
     border-radius: 10px;
     box-shadow: 0 0 20px #75BF44;
+    z-index: 1;
 }
 
 :is(.welcoming, .commitment) p {
     font-size: 1.2rem;
+    line-height: 2rem;
 }
 
-.atmosphere img {
+.atmosphere img:nth-of-type(1){
     width: 40%;
     height: 90%;
     object-fit: cover;
     object-position: center;
     border-radius: 10px;
-    box-shadow: 0 0 20px #75BF44;
+    box-shadow: -10px 10px 5px #75BF44;
+    z-index: 1;
 } 
+
+.atmosphere img:nth-of-type(2) {
+    position: absolute;
+    top: 60%;
+    left: 25%;
+    opacity: .5;
+    transform: rotate(225deg);
+}
+
+.thanks {
+    width: 100%;
+    margin: 10% 0 20%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.thanks p {
+    width: 70%;
+    margin: 10% 0;
+    font-family: 'Exo 2', sans-serif;
+    line-height: 2rem;
+}
+
+.thanks img:nth-of-type(1) {
+    width: 30%;
+    z-index: 1;
+    margin-left: 3%;
+    border-radius: 10%;
+    box-shadow: -10px 10px 5px #75BF44;
+}
+
+.thanks img:nth-of-type(2) {
+    position: absolute;
+    top: 55%;
+    right: 10%;
+    opacity: .5;
+    transform: rotate(225deg);
+}
