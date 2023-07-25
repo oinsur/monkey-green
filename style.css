@@ -77,7 +77,7 @@ body {
     animation: loading 2s linear forwards;
 }
 
-.order:hover {
+.order:hover, .order:active {
     box-shadow: 0 0 20px #36760C;
     filter: hue-rotate(45deg);
 }
