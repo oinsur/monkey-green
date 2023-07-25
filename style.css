@@ -38,11 +38,9 @@ body {
 
 .splash {
     width: 100%;
-    /* background-color: #DBF2CC; */
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* animation: loading 2s linear forwards; */
 }
 
 .splash img:nth-of-type(1) {
@@ -123,14 +121,6 @@ body {
     box-shadow: 10px 10px 5px #75BF44;
 }
 
-/* .intro img:nth-of-type(2) {
-    position: absolute;
-    top: 40%;
-    left: 10%;
-    opacity: .5;
-    transform: rotate(135deg)
-} */
-
 p {
     font-size: clamp(1rem, 2vw, 1.5rem);
 }
@@ -199,7 +189,7 @@ h2 {
 }
 
 :is(.welcoming, .commitment) p {
-    font-size: clamp(1rem, 3vw, 1.2rem);
+    font-size: clamp(.5rem, 3vw, 1rem);
     line-height: clamp(1.5rem, 3vw, 2rem);
 }
 
@@ -212,14 +202,6 @@ h2 {
     box-shadow: -10px 10px 5px #75BF44;
     z-index: 1;
 } 
-
-/* .atmosphere img:nth-of-type(2) {
-    position: absolute;
-    top: 60%;
-    left: 25%;
-    opacity: .5;
-    transform: rotate(225deg);
-} */
 
 .thanks {
     width: 100%;
@@ -243,14 +225,6 @@ h2 {
     border-radius: 10%;
     box-shadow: -10px 10px 5px #75BF44;
 }
-
-/* .thanks img:nth-of-type(2) {
-    position: absolute;
-    top: 55%;
-    right: 10%;
-    opacity: .5;
-    transform: rotate(225deg);
-} */
 
 footer {
     width: 100%;
@@ -290,20 +264,11 @@ footer i {
 footer a {
     color: #36760C;
     text-decoration: none;
+    font-size: clamp(.5rem, 3vw, 1rem);
 }
-
-/* footer a:nth-of-type(2) {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-} */
 
 .details {
     width: 30%;
-}
-
-.contact {
-    width: 15%;
 }
 
 .contact h3 {
@@ -352,7 +317,6 @@ footer p {
     }
     .order {
         width: 40%;
-        /* font-size: 1.5rem; */
     }
     .intro {
         flex-direction: column;
@@ -364,13 +328,8 @@ footer p {
     .intro img:nth-of-type(1) {
         margin: 4% 0;
     }
-    /* p {
-        font-size: 1.2rem;
-    } */
     .intro p {
         width: 80%;
-        /* font-size: 1.2rem; */
-        /* line-height: 2rem; */
         text-align: center;
     }
     .burger {
@@ -383,15 +342,11 @@ footer p {
         width: 80%;
     }
     .healthy h2 {
-        /* font-size: 1.2rem; */
     }
     .healthy p {
-        /* font-size: 1rem;
-        line-height: 1.5rem; */
         text-align: center;
     }
     h2 {
-        /* font-size: 1.5rem; */
     }
     .atmosphere {
         flex-direction: column;
@@ -401,8 +356,6 @@ footer p {
         width: 80%;
     }
     :is(.welcoming, .commitment) p {
-        /* font-size: 1rem; */
-        /* line-height: 1.5rem; */
         text-align: center;
     }
     .atmosphere img {
@@ -435,12 +388,10 @@ footer p {
         width: 100%;
     }
     h3 {
-        /* font-size: 1.2rem; */
         text-align: center;
     }
     footer li {
         text-align: center;
-        /* font-size: 0.8rem; */
     }
     .contact {
         width: 100%;
@@ -460,10 +411,8 @@ footer p {
         text-align: center;
     }
     .links i {
-        /* font-size: 1.5rem ;     */
     }
     footer p {
-        /* font-size: .6rem; */
         letter-spacing: .1rem;
     }
 }
