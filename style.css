@@ -153,7 +153,7 @@ p {
 }
 
 .healthy {
-    margin-top: 15%;
+    margin-top: 10%;
     background-color: #75BF44;
     color: #DBF2CC;
     width: 50%;
@@ -161,6 +161,10 @@ p {
     padding: 2%;
     border-radius: 10px;
     box-shadow: 0 0 20px #75BF44;
+}
+
+.healthy h2 {
+    margin: 0% 0 3%;
 }
 
 .healthy p {
@@ -376,6 +380,9 @@ footer p {
     .healthy {
         margin-top: 10%;
         width: 80%;
+    }
+    .healthy h2 {
+        font-size: 1.2rem;
     }
     .healthy p {
         font-size: 1rem;
