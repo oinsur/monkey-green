@@ -13,7 +13,7 @@
 }
 
 body {
-    min-width: 320px;
+    min-width: 375px;
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -329,4 +329,47 @@ footer p {
     font-style: italic;
     letter-spacing: 0.2rem;
     margin: 1% 0 2%;
+}
+
+/* media queries */
+
+@media screen and (max-width: 425px) {
+    .order {
+        width: 40%;
+        font-size: 1.5rem;
+    }
+    .intro {
+        flex-direction: column;
+        align-items: center;
+    }
+    .intro img {
+        width: 80%;
+    }
+    .intro img:nth-of-type(1) {
+        margin: 4% 0;
+    }
+    p {
+        font-size: 1.2rem;
+    }
+    .intro p {
+        width: 80%;
+        font-size: 1.2rem;
+        line-height: 2rem;
+        text-align: center;
+    }
+    .burger {
+        position: initial;
+        width: 100%;
+        align-self: center;
+    }
+    .healthy {
+        margin-top: 10%;
+        width: 80%;
+    }
+    .healthy p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        text-align: center;
+    }
+    
 }
