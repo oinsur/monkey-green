@@ -67,7 +67,7 @@ body {
     color: #DBF2CC;
     background-color: #75BF44;
     font-family: 'Exo 2', sans-serif;
-    font-size: clamp(.9rem, 2vw, 2rem);
+    font-size: clamp(.9rem, 3vw, 2rem);
     font-style: italic;
     text-decoration: none;
     text-align: center;
