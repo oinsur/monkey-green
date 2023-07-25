@@ -69,7 +69,7 @@ body {
     color: #DBF2CC;
     background-color: #75BF44;
     font-family: 'Exo 2', sans-serif;
-    font-size: 2rem;
+    font-size: clamp(.9rem, 2vw, 2rem);
     font-style: italic;
     text-decoration: none;
     text-align: center;
@@ -132,12 +132,12 @@ body {
 } */
 
 p {
-    font-size: 1.5rem;
+    font-size: clamp(1rem, 2vw, 1.5rem);
 }
 
 .intro p {
     width: 45%;
-    line-height: 3rem;
+    line-height: clamp(1.5rem, 3vw, 3rem);
     z-index: 1;
 }
 
@@ -164,12 +164,13 @@ p {
 }
 
 .healthy h2 {
+    font-size: clamp(1rem, 3vw, 2rem);
     margin: 0% 0 3%;
 }
 
 .healthy p {
-    font-size: 1.2rem;
-    line-height: 2rem;
+    line-height: clamp(.5rem, 5vw, 1.5rem);
+    font-size: clamp(.5rem, 3vw, 1rem);
 }
 
 .atmosphere {
@@ -185,7 +186,7 @@ h2 {
     margin: 5% 0 3%;
     text-align: center;
     font-family: 'Exo 2', sans-serif;
-    font-size: 2rem;
+    font-size: clamp(1rem, 3vw, 2rem);
 }
 
 .welcoming, .commitment {
@@ -198,8 +199,8 @@ h2 {
 }
 
 :is(.welcoming, .commitment) p {
-    font-size: 1.2rem;
-    line-height: 2rem;
+    font-size: clamp(1rem, 3vw, 1.2rem);
+    line-height: clamp(1.5rem, 3vw, 2rem);
 }
 
 .atmosphere img {
@@ -273,13 +274,13 @@ footer img {
 h3 {
     font-family: 'Exo 2', sans-serif;
     margin-bottom: 4%;
-    font-size: 1.4rem;
+    font-size: clamp(0.6rem, 6vw, 1.6rem);
 }
-
 
 footer li {
     list-style-type: none;
     margin-bottom: 3%;
+    font-size: clamp(0.5rem, 5vw, 1.5rem);
 }
 
 footer i {
@@ -302,7 +303,7 @@ footer a {
 }
 
 .contact {
-    width: 10%;
+    width: 15%;
 }
 
 .contact h3 {
@@ -324,13 +325,13 @@ footer a {
     width: 10%;
 }
 .links i {
-    font-size: 2rem;
+    font-size: clamp(1rem, 3vw, 2rem);
 }
 
 footer p {
     width: 100%;
     font-family: 'Exo 2', sans-serif;
-    font-size: 1.2rem;
+    font-size: clamp(.2rem, 3vw, 1.2rem);
     text-align: center;
     font-style: italic;
     letter-spacing: 0.2rem;
@@ -339,7 +340,7 @@ footer p {
 
 /* media queries */
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 768px) {
     .splash {
         justify-content: center;
     }
@@ -351,7 +352,7 @@ footer p {
     }
     .order {
         width: 40%;
-        font-size: 1.5rem;
+        /* font-size: 1.5rem; */
     }
     .intro {
         flex-direction: column;
@@ -363,13 +364,13 @@ footer p {
     .intro img:nth-of-type(1) {
         margin: 4% 0;
     }
-    p {
+    /* p {
         font-size: 1.2rem;
-    }
+    } */
     .intro p {
         width: 80%;
-        font-size: 1.2rem;
-        line-height: 2rem;
+        /* font-size: 1.2rem; */
+        /* line-height: 2rem; */
         text-align: center;
     }
     .burger {
@@ -382,15 +383,15 @@ footer p {
         width: 80%;
     }
     .healthy h2 {
-        font-size: 1.2rem;
+        /* font-size: 1.2rem; */
     }
     .healthy p {
-        font-size: 1rem;
-        line-height: 1.5rem;
+        /* font-size: 1rem;
+        line-height: 1.5rem; */
         text-align: center;
     }
     h2 {
-        font-size: 1.5rem;
+        /* font-size: 1.5rem; */
     }
     .atmosphere {
         flex-direction: column;
@@ -400,8 +401,8 @@ footer p {
         width: 80%;
     }
     :is(.welcoming, .commitment) p {
-        font-size: 1rem;
-        line-height: 1.5rem;
+        /* font-size: 1rem; */
+        /* line-height: 1.5rem; */
         text-align: center;
     }
     .atmosphere img {
@@ -434,12 +435,12 @@ footer p {
         width: 100%;
     }
     h3 {
-        font-size: 1.2rem;
+        /* font-size: 1.2rem; */
         text-align: center;
     }
     footer li {
         text-align: center;
-        font-size: 0.8rem;
+        /* font-size: 0.8rem; */
     }
     .contact {
         width: 100%;
@@ -459,9 +460,10 @@ footer p {
         text-align: center;
     }
     .links i {
-        font-size: 1.5rem ;    }
+        /* font-size: 1.5rem ;     */
+    }
     footer p {
-        font-size: .6rem;
+        /* font-size: .6rem; */
         letter-spacing: .1rem;
     }
 }
