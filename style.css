@@ -23,7 +23,7 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-.page{
+.page {
     background: #DBF2CC url(./assets/leaves-bg.png);
     background-size: 25%;
     background-position: center;
@@ -279,6 +279,10 @@ footer a {
     margin-top: 0;
 }
 
+.follow {
+    margin-top: 12%;
+}
+
 .links {
     width: 50%;
     display: flex;
@@ -341,12 +345,8 @@ footer p {
         margin-top: 10%;
         width: 80%;
     }
-    .healthy h2 {
-    }
     .healthy p {
         text-align: center;
-    }
-    h2 {
     }
     .atmosphere {
         flex-direction: column;
@@ -402,6 +402,9 @@ footer p {
     .contact h3:nth-child(1) {
         margin: 0 0 4%;
     }
+    .follow {
+        margin: 0;
+    }
     .links {
         width: 100%;
         margin: 0;
@@ -409,8 +412,6 @@ footer p {
     }
     .social {
         text-align: center;
-    }
-    .links i {
     }
     footer p {
         letter-spacing: .1rem;
