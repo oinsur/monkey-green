@@ -3,6 +3,7 @@
 :root {
     display: flex;
     justify-content: center;
+    scroll-behavior: smooth;
 }
 
 * {
@@ -253,14 +254,63 @@ footer {
     color: #36760C;
     font-weight: 600;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
 }
 
-footer img {
+footer a:nth-of-type(1) {
     width: 20%;
+}
+footer img {
+    width: 100%;
 }
 
 h3 {
     font-family: 'Exo 2', sans-serif;
+    margin-bottom: 4%;
+    font-size: 1.4rem;
+}
+
+
+footer li {
+    list-style-type: none;
+    margin-bottom: 3%;
+}
+
+footer i {
+    margin-right: 2%;
+}
+
+footer a {
+    color: #36760C;
+    text-decoration: none;
+}
+
+footer a:nth-of-type(2) {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.details {
+    width: 30%;
+}
+
+.contact {
+    width: 10%;
+}
+
+.contact h3 {
+    margin-bottom: 12%;
+}
+
+.links {
+    margin: 12% 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.links i {
+    font-size: 2rem;
 }
